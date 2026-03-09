@@ -1,7 +1,8 @@
+import { Briefcase, Code, GraduationCap, Users } from 'lucide-react';
+
 import { motion } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Briefcase, GraduationCap, Users, Code } from 'lucide-react';
 import teamsImg from '@/assets/teams-hyesun.png';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -52,8 +53,8 @@ export function AboutSection() {
               </p>
               <p>
                 {t(
-                  "Today I work on the Teams Meetings Lifecycle & Virtual Appointment team, building features with .NET 8, TypeScript, ReactJS, GraphQL, and Apollo Client. Outside of code, I serve as the President of Changbal, a community for Korean professionals, and love mentoring aspiring developers navigating career transitions.",
-                  "현재 Teams Meetings Lifecycle & Virtual Appointment 팀에서 .NET 8, TypeScript, ReactJS, GraphQL, Apollo Client로 기능을 개발하고 있습니다. 업무 외에는 한인 전문가 커뮤니티 '창발'의 회장으로서 커리어 전환을 꿈꾸는 개발자들을 멘토링하고 있습니다."
+                  "Today I work on the Teams Meeting intelligence Collab team, building features with .NET 8, TypeScript, ReactJS, GraphQL, and Apollo Client. Outside of code, I serve as the President of Changbal, a community for Korean professionals, and love mentoring aspiring developers navigating career transitions.",
+                  "현재 Teams Meetings Meeting intelligence Collab 팀에서 .NET 8, TypeScript, ReactJS, GraphQL, Apollo Client로 기능을 개발하고 있습니다. 업무 외에는 한인 전문가 커뮤니티 '창발'의 회장으로서 커리어 전환을 꿈꾸는 개발자들을 멘토링하고 있습니다."
                 )}
               </p>
             </div>
@@ -67,11 +68,6 @@ export function AboutSection() {
               ))}
             </div>
 
-            {/* Languages */}
-            <div className="mt-4 flex gap-4 text-sm text-muted-foreground">
-              <span>🇺🇸 {t('English (Full Professional)', '영어 (비즈니스급)')}</span>
-              <span>🇰🇷 {t('Korean (Native)', '한국어 (원어민)')}</span>
-            </div>
           </motion.div>
 
           <motion.div {...fadeUp} className="flex justify-center">

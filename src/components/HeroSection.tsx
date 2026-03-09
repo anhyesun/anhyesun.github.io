@@ -1,8 +1,9 @@
-import { motion } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
 import { ArrowDown, MapPin } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
 import profileImg from '@/assets/profile.png';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export function HeroSection() {
   const { lang, t } = useLanguage();
@@ -33,7 +34,7 @@ export function HeroSection() {
             <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-xl leading-relaxed">
               {t(
                 "Versatile Software Engineer · NPO Volunteer · Career Pivoter · Women's Empowerment Advocate",
-                '다재다능한 소프트웨어 엔지니어 · NPO 봉사자 · 커리어 피보터 · 여성 역량 강화 옹호자'
+                '다재다능한 소프트웨어 엔지니어 · NPO 리더 · 성공적인 커리어 전환 · 여성 리더'
               )}
             </p>
 
@@ -51,7 +52,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Button size="lg" className="rounded-full px-8" asChild>
-                <a href="#contact">{t('Book a Talk', '강연 신청하기')}</a>
+                <a href="#contact">{t('Request a Talk', '강연 신청하기')}</a>
               </Button>
               <Button size="lg" variant="outline" className="rounded-full px-8 border-primary text-primary hover:bg-sky-light" asChild>
                 <a href="#about">{t('Learn More', '더 알아보기')}</a>

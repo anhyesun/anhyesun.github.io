@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { Linkedin, Mail, Send } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Linkedin, Send } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { toast } from 'sonner';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useState } from 'react';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -63,7 +64,7 @@ export function ContactSection() {
                     : 'bg-secondary text-secondary-foreground hover:bg-muted'
                 }`}
               >
-                {t('📣 Book a Talk', '📣 강연 신청')}
+                {t('📣 Request a Talk', '📣 강연 신청')}
               </button>
               <button
                 onClick={() => setType('mentor')}

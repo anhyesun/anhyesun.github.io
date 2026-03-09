@@ -1,6 +1,7 @@
+import { Award, Heart, Star, Trophy } from 'lucide-react';
+
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Trophy, Award, Heart, Star } from 'lucide-react';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -69,7 +70,7 @@ export function AwardsSection() {
       subtitle: { en: 'Community Awareness Campaign', ko: '커뮤니티 인식 캠페인' },
       desc: {
         en: 'Received grand prize for a UCC (User Created Content) campaign focused on preventing child abuse.',
-        ko: '아동학대 예방을 주제로 한 UCC 공모전에서 대상을 수상했습니다.',
+        ko: '아동학대 예방을 주제로 한 UCC 공모전에서 대상인 보건복지부 장관상을 수상했습니다.',
       },
       color: 'text-accent-foreground',
     },
